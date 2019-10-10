@@ -1,0 +1,9 @@
+{
+    "name": "Tic Tac Toe : An offline Game by zeGolem",
+    "short_name": "TicTacToe",
+    "lang": "en-US",
+    "start_url": "/games/tictactoe/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+}
