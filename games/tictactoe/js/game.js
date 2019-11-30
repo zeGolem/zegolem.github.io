@@ -16,10 +16,10 @@ function onSlotClick(event) {
     var element = event.target;
     if (element.innerHTML == "" && element.parentNode.className != "slot") {
         var slotID = parseInt(element.id.substring(5)) - 1;
-        var htmlToAdd = currentPlayer == 'o' ? htmlCircle : htmlCross;
+        var htmlToAdd = currentPlayer == 'O' ? htmlCircle : htmlCross;
         element.innerHTML = htmlToAdd;
         currentBoard[slotID] = currentPlayer;
-        currentPlayer = currentPlayer == 'o' ? 'x' : 'o';
+        currentPlayer = currentPlayer == 'O' ? 'X' : 'O';
     }
     if (checkGameEnded()) {
         handleGameEnd();
