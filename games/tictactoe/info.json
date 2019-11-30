@@ -1,0 +1,11 @@
+{
+    "version": 1.0,
+    "cacheName": "ttt-offline-pwa",
+    "files": [
+        "/games/tictactoe/index.html",
+        "/games/tictactoe/css/style.css",
+        "/games/tictactoe/js/main.js",
+        "/games/tictactoe/js/game.js",
+        "/games/tictactoe/res/x.svg"
+    ]
+}
