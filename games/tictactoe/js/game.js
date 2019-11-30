@@ -39,6 +39,7 @@ function resetBoard() {
 
 function handleGameEnd() {
     console.log(gameEndedMessage);
+    alert(gameEndedMessage);
     resetBoard();
 }
 
