@@ -60,9 +60,21 @@ div.circle {
     width: 90%;
     height: 90%;
     border-radius: 50%;
+    animation: zoomIn .1s;
 }
 
 img.cross {
     width: 90%;
     height: 90%;
+    animation: zoomIn .1s;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1.0);
+    }
 }
