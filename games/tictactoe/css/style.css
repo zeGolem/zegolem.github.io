@@ -53,6 +53,11 @@ div.slot {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+
+div.slot:hover {
+    background: #ffffffad;
 }
 
 div.circle {
