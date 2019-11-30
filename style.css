@@ -1,0 +1,27 @@
+html, body {
+    background: #c8e6ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+li {
+    background: #00000023;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+code {
+    word-break: break-all;
+}
+
+li > code {
+    background: #ffffff57;
+}
+
+a:visited {
+    color: blue;
+}
