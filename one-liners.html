@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zeGolem's One-Liners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="/index.html" style=position:absolute;top:0;left:0;font-size:1.5em;>↶⌂</a>
+    <h1>Cool One-Liners in different languages</h1>
+    <ul>
+        <li>
+            [JS] Anti-RickRolls<br>
+            <code>Array.from(document.querySelectorAll("a[href]")).filter(e=>e.href.match(/((youtube.com)|(youtu.be))\/(watch\?v=)?dQw4w9WgXcQ/)).forEach(e=>e.innerHTML += "&lt;span style=color:red;font-weight:bold> [RICKROLL]&lt;/span>")</code>
+        </li>
+    </ul>
+    <script>
+        document.querySelectorAll("code").forEach(e => e.onclick = function() {
+            var r = document.createRange()
+            r.selectNode(this);
+            window.getSelection().addRange(r);
+        })
+    </script>
+</body>
+
+</html>
