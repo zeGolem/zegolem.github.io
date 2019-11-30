@@ -1,4 +1,4 @@
-var currentPlayer = 'o';
+var currentPlayer = 'O';
 var htmlCircle = '<div class="circle"></div>';
 var htmlCross = '<img class="cross" src="res/x.svg"/>';
 var slots = document.querySelectorAll("div.slot");
@@ -11,6 +11,8 @@ const cleanBoardHtml = DOMBoard.innerHTML;
 
 var gameEndedMessage = "";
 
+const currTurn = document.getElementById("turn");
+currTurn.innerHTML = currentPlayer;
 
 function onSlotClick(event) {
     var element = event.target;
@@ -19,11 +21,12 @@ function onSlotClick(event) {
         var htmlToAdd = currentPlayer == 'O' ? htmlCircle : htmlCross;
         element.innerHTML = htmlToAdd;
         currentBoard[slotID] = currentPlayer;
-        currentPlayer = currentPlayer == 'O' ? 'X' : 'O';
+        currTurn.innerHTML = currentPlayer;
     }
     if (checkGameEnded()) {
         handleGameEnd();
     }
+    currentPlayer = currentPlayer == 'O' ? 'X' : 'O';
 }
 
 function resetBoard() {
