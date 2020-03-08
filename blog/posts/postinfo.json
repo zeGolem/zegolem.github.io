@@ -1,0 +1,7 @@
+{
+    "posts": [{
+        "id": "test",
+        "title": "Test Blog",
+        "hidden": true
+    }]
+}

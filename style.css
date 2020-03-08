@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     background: #c8e6ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -6,6 +7,10 @@ html, body {
 h1 {
     text-align: center;
     font-weight: 100;
+}
+
+h6 {
+    text-align: center;
 }
 
 li {
@@ -18,10 +23,22 @@ code {
     word-break: break-all;
 }
 
-li > code {
+li>code {
     background: #ffffff57;
 }
 
 a:visited {
     color: blue;
+}
+
+blockquote {
+    background-color: #00000009;
+    padding: 5px;
+}
+
+blockquote::before {
+    content: ".";
+    background-color: #0000009a;
+    width: 10px;
+    height: 100%;
 }
