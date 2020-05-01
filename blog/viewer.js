@@ -128,6 +128,6 @@ function markdownStyleToHTML(string) {
     newString = newString.replace(/\*([^\*]+)\*/, "<i>$1</i>");
     newString = newString.replace(/`([^`]+)`/, "<code>$1</code>");
     newString = newString.replace(/\[!(.*)\]\((.*)\)/, "<img src=\"$2\" alt=\"$1\">");
-    newString = newString.replace(/\[(.*)\]\((.*)\)/, "<a href=\"$2\">\"$1\"</a>");
+    newString = newString.replace(/\[(.*)\]\((.*)\)/, "<a href=\"$2\">$1</a>");
     return newString;
 }
