@@ -94,7 +94,7 @@ const computeGrades = () => {
 	const outTotalPts = get("output#out-totalpts");
 	outTotalPts.innerText = ptsSum;
 	const outFinalGrade = get("output#out-finalgrade");
-	outFinalGrade.value = `20 * ${ptsSum} / ${maxPts} = ${Math.round(((ptsSum / maxPts) * 20) * 100) / 100}`;
+	outFinalGrade.value = `20 * (${ptsSum} / ${maxPts}) = ${Math.round(((ptsSum / maxPts) * 20) * 100) / 100}`;
 };
 
 
