@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculatrice BAC</title>
+	<style>
+		table,
+		td {
+			border: 1px solid #333;
+		}
+
+		thead,
+		tfoot {
+			background-color: #333;
+			color: #fff;
+		}
+
+		input {
+			width: 5rem;
+		}
+
+		tr.option {
+			background-color: rgb(138, 138, 138);
+			font-style: italic;
+		}
+
+		tr.option input[type="number"] {
+			font-style: italic;
+		}
+	</style>
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<h1>Calculatrice de note au BAC</h1>
+	</header>
+	<table>
+		<thead>
+			<tr>
+				<th>Matière</th>
+				<th>Note (/20)</th>
+				<th>Coef.</th>
+				<th>Points</th>
+				<th>Points max.</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>TOTAL</td>
+				<td><output id="out-finalgrade"></output></td>
+				<td><output id="out-totalweight"></output></td>
+				<td><output id="out-totalpts"></output></td>
+				<td><output id="out-totalmaxpts"></output></td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>
