@@ -73,22 +73,28 @@ const computeGrades = () => {
 		const outPts = get(`output#out-${subjectID}`);
 		const inGrade = get(`input#in-${subjectID}`);
 		let pts;
-		if (!subject.option)
+		let calcPts = "";
+		if (!subject.option) {
 			pts = inGrade.value * subject.weight;
+			calcPts = `${inGrade.value} * ${subject.weight}`;
+		}
 		else {
 			let grade = inGrade.value;
 			if (grade < 10)
-				pts = 0;
-			else 
+				pts = -1;
+			else {
 				pts = (grade - 10) * subject.weight;
+				calcPts = `(${grade} - 10) * ${subject.weight}`;
+			}
 		}
-		outPts.innerText = `${pts}`;
-		ptsSum += pts;
+		outPts.innerText = `${pts == -1 ? "N/A" : `${calcPts} = ${pts}`}`;
+		if (pts != -1)
+			ptsSum += pts;
 	}
 	const outTotalPts = get("output#out-totalpts");
 	outTotalPts.innerText = ptsSum;
 	const outFinalGrade = get("output#out-finalgrade");
-	outFinalGrade.value = `${Math.round(((ptsSum / maxPts) * 20) * 100) / 100}`;
+	outFinalGrade.value = `20 * ${ptsSum} / ${maxPts} = ${Math.round(((ptsSum / maxPts) * 20) * 100) / 100}`;
 };
 
 
